@@ -5,27 +5,27 @@
     <h3>
         Information about the playlist app
     </h3>
-
     <div class="ui centered card">
+      {{#each employees}}
   <div class="image">
-    <img src="/stevie.jpg">
+    <img src="{{image}}">
   </div>
   <div class="content">
-    <a class="header">{{employee.fullname}} </a>
+    <a class="header">{{fullname}} </a>
     <div class="meta">
-      <span class="date">Joined in {{employee.joined}} </span>
+      <span class="date">Joined in {{joined}} </span>
     </div>
     <div class="description">
-       {{employee.name}} is an {{employee.job}}  living in  {{employee.city}}.
+       {{name}} is an {{job}}  living in  {{city}}.
     </div>
   </div>
   <div class="extra content">
     <a>
       <i class="user icon"></i>
         contacts
-        {{employee.mates}}
+        {{mates}}
     </a>
   </div>
+  {{/each}}
 </div>
-
 </section>
