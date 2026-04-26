@@ -12,8 +12,38 @@
       "id": "9f3bb5c3-17ab-48b1-abfb-00efa77280e5",
       "title": "homer playlist",
       "rating": 5,
-      "songs": [],
+      "songs": [
+        {
+          "id": "56d0c46d-b14c-416f-8865-d6df85bed49f",
+          "title": "utiuyk",
+          "artist": "uyhtxuyu"
+        }
+      ],
       "date": "2026-04-26T12:47:34.493Z"
+    },
+    {
+      "id": "f87c63e3-eb53-4527-abf0-ceb8726f0f78",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "ugviuy",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-26T20:28:08.290Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/dw1xisdei/image/upload/v1777235290/lodlaozriwkpb5fml6lw.jpg",
+        "public_id": "lodlaozriwkpb5fml6lw"
+      }
+    },
+    {
+      "id": "44d9627c-8127-4ee2-80e7-06b552a41596",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "ugviuy",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-26T20:28:14.500Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/dw1xisdei/image/upload/v1777235297/p9t7gdj2eha1yyx6skyy.jpg",
+        "public_id": "p9t7gdj2eha1yyx6skyy"
+      }
     }
   ]
 }
