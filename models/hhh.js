@@ -8,7 +8,7 @@ const hhh = {
   store: new JsonStore('./models/hhh.json', { info: {} }),
   collection: 'employees',
 
-  getAppInfo() {
+  getEmployees() {
     return this.store.findAll(this.collection);
   },
 

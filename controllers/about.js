@@ -1,17 +1,23 @@
 'use strict';
 import logger from "../utils/logger.js";
 import hhh from "../models/hhh.js";
-const about = {
-  createView(request, response) {
-    logger.info("About page loading!");
+import accounts from './accounts.js';
 
-    const viewData={
-      title: "About the Playlist App",
-      employees: hhh.getAppInfo()
-    };
+const about = {
+createView(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.info("About page loading!");
     
-    response.render('about', viewData);   
-  },
-};
+    if (loggedInUser) {
+      const viewData = {
+        title: 'About the Playlist App',
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        employees: hhh.getEmployees(),
+      };
+      response.render('about', viewData);
+    }
+    else response.redirect('/');    
+},
+}
 
 export default about;

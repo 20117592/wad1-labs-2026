@@ -78,9 +78,9 @@
             </div>
             <div class ="label">
                 Largest Playlist:
-                {{largestCount}} songs
+                {{longestSize}} songs
                 <table>
-                    {{#each largestTitles}}
+                    {{#each longestTitles}}
                     <tr>
                         <td>{{this}}</td>
                     </tr>
@@ -88,6 +88,15 @@
                 </table>
             </div>
         </div>
+        <div class="ui red statistic">
+          <div class="value">
+            <i class="red user icon"></i>
+          </div>
+          <div class="label">
+            Users: {{displayNumUsers}}
+          </div>
+        </div>
+        
       </div>
     </div>
     
